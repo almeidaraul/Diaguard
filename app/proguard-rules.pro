@@ -16,8 +16,8 @@
 ##---------------End: Custom ----------
 
 ##---------------Begin: Test ----------
--keep class androidx.test.runner.**
--keepclassmembers class androidx.test.runner.** { *; }
+-keep class androidx.test.**
+-keepclassmembers class androidx.test.** { *; }
 ##---------------End: Test ----------
 
 ##---------------Begin: EventBus ----------
