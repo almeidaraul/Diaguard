@@ -138,3 +138,10 @@ task applyDateToReadme() {
 
 assemble.dependsOn applyVersionToReadme
 assemble.dependsOn applyDateToReadme
+
+// Workaround: https://github.com/android/android-test/issues/472#issuecomment-562253426
+configurations.all {
+    resolutionStrategy {
+        force "androidx.test:monitor:1.3.0"
+    }
+}
